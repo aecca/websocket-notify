@@ -1,0 +1,17 @@
+#anuncios-box(ng-init='init()')
+    h4.title_home.mt40.mb40 Dashboard / Mis Avisos
+    table.table
+     thead
+       tr
+         th #
+         th(align='left') Aviso
+         th(align='left') Descripcion
+         th(align='left') Postulantes
+         th(align='left') Visitas
+     tbody
+       tr(ng-repeat='aw in anuncios')
+         td(scope="row") {{$index+1}}
+         td {{aw.titulo}}
+         td {{aw.descripcion}}
+         td {{aw.postulaciones.length}}
+         td {{aw.visitas}}

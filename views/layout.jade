@@ -1,0 +1,33 @@
+doctype html
+html
+  head
+    title= title
+    meta(http-equiv='Content-Type', content='text/html; charset=utf-8')
+
+    link(rel="stylesheet", href="http://cds.aptitus.com/main/css/modules/all/fonts.css?v=201512091856")
+    link(rel="stylesheet", href="http://cds.aptitus.com/main/css/modules/all/layout.css?v=201512091856")
+    link(rel="stylesheet", href="http://cds.aptitus.com/main/css/modules/postulante/home.css?v=201512091856")
+    link(rel="stylesheet", href="http://cds.aptitus.com/main/css/modules/postulante/aviso.css?v=201512091856")
+    link(rel="stylesheet", href="//cdn.jsdelivr.net/angular.ng-notify/0.6.0/ng-notify.min.css")
+
+
+    link(rel='stylesheet', href='/css/style.css')
+
+    script.
+      var mApp = !{JSON.stringify(data)}
+    script(type='text/javascript', src='/socket.io/socket.io.js')
+    script(type='text/javascript', src='js/libs/angular.min.js')
+    script(type='text/javascript', src='js/libs/angular-route.min.js')
+    script(type='text/javascript', src='js/libs/angular-socket.min.js')
+    script(type='text/javascript', src='http://cdn.jsdelivr.net/angular.ng-notify/0.6.0/ng-notify.min.js')
+
+    script(type='text/javascript', src='js/app.js')
+    script(type='text/javascript', src='js/controllers/login.js')
+    script(type='text/javascript', src='js/controllers/listado.js')
+    script(type='text/javascript', src='js/controllers/anuncio.js')
+    script(type='text/javascript', src='js/controllers/admin.js')
+
+
+
+  body(ng-app='app')
+    block content

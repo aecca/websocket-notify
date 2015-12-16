@@ -1,0 +1,23 @@
+#detalle-box(ng-init='init()')
+  .job_box_already_have_applied(ng-if='postulacion')
+      .info_cv
+        h4.title_cv.m0 ¡Felicitaciones!
+        p
+          | Acabas de postular al puesto de {{anuncio.titulo}}
+      .image_cv
+
+  .job_description_wrapper(style='width:100%')
+    .job_description.row
+        img(ng-src='{{anuncio.imagen}}')
+        h1.job_description_title
+          label(itemprop='title') {{anuncio.titulo}} - Visitas : {{contador}}
+
+      .job_box_wrapper
+        h3.job_box_title Descripci&oacute;n del Puesto
+        .job_box_information(itemprop='description')
+          p {{anuncio.descripcion}}
+
+      .job_options_wrapper
+        .button_container
+          a.btn.btn_secondary(title='Postula', ng-click='postular()', ng-disabled='postulacion')
+            span Postular

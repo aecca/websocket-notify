@@ -1,0 +1,13 @@
+#anuncios-box(ng-init='init()')
+  h3.title_home.mt40.mb40 Empleos Destacados
+  .row
+    .company_wrapper(ng-repeat="aw in anuncios")
+      a(href='#/postular/{{aw._id}}/')
+        .center_image
+          img.lazy(ng-src='{{aw.imagen}}', style='display: block;')
+        .company_information
+          h4.ellipsis.is-truncated(style='word-wrap: break-word;'){{aw.titulo}}
+          p
+            label(itemprop='jobLocation') {{aw.visitas}}
+          span.btn.btn_secondary Ver detalle
+        .icon.icon_arrow_right.hide

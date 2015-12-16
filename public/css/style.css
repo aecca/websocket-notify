@@ -1,0 +1,42 @@
+body {
+  padding:10px;
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+#login-box{
+  width: 300px;
+  margin: 0 auto;
+}
+
+#login-box input{
+  background-color: #CCCCCC;
+  padding: 12px;
+  font-size: 19px;
+  height: 50px;
+}
+
+
+#anuncios-box {
+  width: 900px;
+  padding:8px;
+  margin: 0 auto;
+}
+
+#anuncios-box th{
+  padding: 10px;
+  background: #ccc;
+}
+#anuncios-box td{
+   font-size: 12px;
+   padding: 4px 5px;
+}
+#detalle-box{
+  width: 750px;
+  margin: 0 auto;
+  padding:20px;
+}

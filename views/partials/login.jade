@@ -1,0 +1,7 @@
+#login-box
+  form(ng-if="!userLogin", id="login-box", ng-submit='submit()')
+    .form-group
+      h3.title_home.mt40.mb40 Usuario
+      input.form-control(type='text', ng-model='form.nombre', placeholder='@andy_ecca', required)
+
+    button.btn.btn_secondary(type='submit') Entrar
